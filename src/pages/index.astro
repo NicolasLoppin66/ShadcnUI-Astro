@@ -1,4 +1,5 @@
 ---
+// Component Script (Javascript)
 // Global style file
 import "@/styles/globals.css";
 
@@ -7,27 +8,16 @@ import Layout from "../layouts/Layout.astro";
 
 // Components Astro
 import Card from "../components/Card.astro";
-
-// Components JSX
-import { Copy } from "lucide-react";
-
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 ---
 
+<!-- Component template (HTML + JS Expression) -->
 <Layout title="Welcome to Astro.">
-  
+  <!-- En astro -->
+  <Card
+    href="https://www.google.com"
+    title="Go to Google"
+    body="Go here to found answer on your question"
+  />
 </Layout>
 
 <style></style>
